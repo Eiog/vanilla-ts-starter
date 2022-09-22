@@ -15,8 +15,6 @@
     "resolveJsonModule": true,
     "noUnusedLocals": true, // 检查只声明、未使用的局部变量(只提示不报错)
     "strictNullChecks": true, // 不允许把null、undefined赋值给其他类型的变量
-    "noUnusedParameters": true, // 检查未使用的函数参数(只提示不报错)
-    "noImplicitReturns": true, //每个分支都会有返回值
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
