@@ -1,0 +1,12 @@
+{
+  "i18n-ally.localesPaths": [
+    "src/i18n",
+    "src/locales",
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 设置默认格式化插件
+  "editor.formatOnSave": true, // 保存代码时自动格式化
+  "files.eol": "\n",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

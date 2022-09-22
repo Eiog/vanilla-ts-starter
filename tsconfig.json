@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "strict": true, // 开启所有严格的类型检查
+    "esModuleInterop": true, // 允许export=导出，由import from 导入
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "moduleResolution": "node", // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
+    "resolveJsonModule": true,
+    "noUnusedLocals": true, // 检查只声明、未使用的局部变量(只提示不报错)
+    "strictNullChecks": true, // 不允许把null、undefined赋值给其他类型的变量
+    "noUnusedParameters": true, // 检查未使用的函数参数(只提示不报错)
+    "noImplicitReturns": true, //每个分支都会有返回值
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ],
+    },
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
