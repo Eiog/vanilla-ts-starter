@@ -1,3 +1,33 @@
 {
-  "globals": {}
+  "globals": {
+    "EnumContentType": true,
+    "EnumDataType": true,
+    "REGEXP_CODE_FOUR": true,
+    "REGEXP_CODE_SIX": true,
+    "REGEXP_EMAIL": true,
+    "REGEXP_PHONE": true,
+    "REGEXP_PWD": true,
+    "REGEXP_URL": true,
+    "clearLocal": true,
+    "decrypto": true,
+    "encrypto": true,
+    "formatJsonToUrlParams": true,
+    "getLocal": true,
+    "isArray": true,
+    "isBoolean": true,
+    "isDate": true,
+    "isFile": true,
+    "isFunction": true,
+    "isMap": true,
+    "isNull": true,
+    "isNumber": true,
+    "isObject": true,
+    "isRegExp": true,
+    "isSet": true,
+    "isString": true,
+    "isUndefined": true,
+    "removeLocal": true,
+    "setLocal": true,
+    "useFormat": true
+  }
 }
