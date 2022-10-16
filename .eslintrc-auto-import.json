@@ -12,7 +12,9 @@
     "decrypto": true,
     "encrypto": true,
     "formatJsonToUrlParams": true,
+    "get": true,
     "getLocal": true,
+    "http": true,
     "isArray": true,
     "isBoolean": true,
     "isDate": true,
@@ -26,6 +28,7 @@
     "isSet": true,
     "isString": true,
     "isUndefined": true,
+    "post": true,
     "removeLocal": true,
     "setLocal": true,
     "useFormat": true

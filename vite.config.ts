@@ -22,7 +22,7 @@ export default defineConfig(() => {
       }),
     ],
     server: {
-      port: 3301,
+      port: 3001,
       host: true, // host设置为true才可以使用network的形式，以ip访问项目
       open: false, // 自动打开浏览器
       cors: true, // 跨域设置允许
