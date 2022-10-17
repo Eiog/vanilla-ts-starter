@@ -53,9 +53,7 @@ axiosInstance.interceptors.response.use(
     if (response) {
       const code = response.status;
       if (code === 401) {
-        console.log(401);
-      }
-      if (code === 400) {
+        console.log(STATUS_TEXT[code]);
       } else {
       }
 

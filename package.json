@@ -5,15 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "type": "tsc --noEmit",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
     "@types/node": "^18.11.0",
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "@unocss/reset": "^0.45.29",
+    "crypto-js": "^4.1.1",
     "eslint": "^8.25.0",
     "eslint-plugin-prettier": "^4.2.1",
     "less": "^4.1.3",
