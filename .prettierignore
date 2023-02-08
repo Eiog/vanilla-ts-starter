@@ -1,8 +1,0 @@
-.prettierignore
-.gitignore
-.eslintignore
-pnpm-lock.yaml
-docs/
-dist/
-.vscode
-node_modules

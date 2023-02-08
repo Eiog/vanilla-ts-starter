@@ -1,7 +1,7 @@
-import { defineConfig } from "vite";
-import Unocss from "unocss/vite";
-import AutoImport from "unplugin-auto-import/vite";
-import { resolve } from 'path';
+import { resolve } from 'path'
+import { defineConfig } from 'vite'
+import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 export default defineConfig(() => {
   return {
     plugins: [
@@ -12,13 +12,9 @@ export default defineConfig(() => {
           /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
         ],
         imports: [],
-        dirs: ["src/utils"],
-        dts: "src/typings/auto-import.d.ts",
-        eslintrc: {
-          enabled: true,
-          filepath: "./.eslintrc-auto-import.json",
-          globalsPropValue: true,
-        },
+        dirs: ['src/utils'],
+        dts: 'src/typings/auto-import.d.ts',
+
       }),
     ],
     server: {
@@ -31,7 +27,7 @@ export default defineConfig(() => {
         '/api': {
           target: 'https://mock.apifox.cn/m1/476417-0-default',
           changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api/, ''),
+          rewrite: path => path.replace(/^\/api/, ''),
         },
       },
     },
@@ -65,5 +61,5 @@ export default defineConfig(() => {
         '~': resolve(__dirname, './src'), // 路径别名
       },
     },
-  };
-});
+  }
+})
