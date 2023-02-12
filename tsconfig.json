@@ -7,16 +7,18 @@
       "ESNext",
       "DOM"
     ],
+    "skipDefaultLibCheck": true, //忽略库的默认声明文件的类型检查
     "strict": true, // 开启所有严格的类型检查
     "esModuleInterop": true, // 允许export=导出，由import from 导入
     "jsx": "preserve",
-    "skipLibCheck": true,
+    "skipLibCheck": true, //忽略所有的声明文件（ *.d.ts ）的类型检查
     "moduleResolution": "node", // 模块解析策略，ts默认用node的解析策略，即相对的方式导入
-    "resolveJsonModule": true,
+    "resolveJsonModule": true, //解析json文件
     "noUnusedLocals": true, // 检查只声明、未使用的局部变量(只提示不报错)
     "strictNullChecks": true, // 不允许把null、undefined赋值给其他类型的变量
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
+    "allowJs": true, //允许编译 JavaScript 文件
+    "forceConsistentCasingInFileNames": true, //禁止对同一个文件的不一致的引用
+
     "paths": {
       "~/*": [
         "src/*"
