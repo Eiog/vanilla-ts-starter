@@ -2,8 +2,8 @@ import NProgress from 'nprogress'
 import type {
   AxiosError,
   AxiosInstance,
-  AxiosRequestConfig,
   AxiosResponse,
+  InternalAxiosRequestConfig,
 } from 'axios'
 import axios from 'axios'
 const BASE_PREFIX = import.meta.env.VITE_API_BASEURL || ''
@@ -28,7 +28,7 @@ const axiosInstance: AxiosInstance = axios.create({
 })
 // 请求拦截器
 axiosInstance.interceptors.request.use(
-  (config: AxiosRequestConfig) => {
+  (config: InternalAxiosRequestConfig) => {
     // TODO 在这里可以加上想要在请求发送前处理的逻辑
     // TODO 比如 loading 等
     if (!NProgress.isStarted())
@@ -55,9 +55,12 @@ axiosInstance.interceptors.response.use(
     if (response) {
       const code = response.status
       if (code === 401) {
+        // eslint-disable-next-line no-console
         console.log(STATUS_TEXT[code])
       }
       else {
+        // eslint-disable-next-line no-console
+        console.log(error)
       }
 
       return Promise.reject(response.data)
